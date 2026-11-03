@@ -89,18 +89,35 @@ video {
 
 /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
 
+body {
+	font-family: sans-serif;
+	background-color: rgb(255, 2, 1);
+}
 
 div.home-container {
 	background: url(home-background.jpg) center center fixed;
 	background-size: cover;
 	position: relative;
 	min-height: 100vh;
+	background-color: rgb(250, 250, 250);
+	width: 90%;
+	margin: auto;
+
+}
+
+nav ul li.selected a {
+
+	background-color: rgb(228, 130, 14);
+	color: rgb(250, 250, 250);
 
 }
 
 div.container {
 	position: relative;
 	min-height: 100vh;
+	background-color: rgb(250, 250, 250);
+	margin: auto;
+	width: 90%;
 }
 
 /* >>> IMPORTANT: you have to change the wrap of the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class. And you need a div with the class container and all the other pages.  */
@@ -119,13 +136,13 @@ img {
 
 header {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 1fr 2fr;
 	background: rgb(204 204 204);
 	padding: 1em 1em;
 }
 
 h1 {
-	width: 100%;
+	width: 13em;
 }
 
 h2,
@@ -161,26 +178,15 @@ a {
 
 nav ul {
 	text-align: right;
+
+
 }
 
 ul li {
 	list-style-type: none;
 }
 
-figure {
-	margin-bottom: ____;
-}
 
-main.menu ul {
-	margin: ____ ____;
-}
-
-main.menu ul li {
-	margin: 1em 1em 1em;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-}
 
 p {
 	margin: 1em 1em 1em;
@@ -200,18 +206,6 @@ p.price {
 	margin: 0.5em;
 }
 
-nav ul li {
-	text-transform: uppercase;
-	font-weight: bold;
-	margin-bottom: .5em;
-}
-
-nav ul li a {
-	color: rgb(255 255 84);
-	background-color: rgb(0 0 244);
-	padding: 0.1em 0.1em 0.0em;
-	font-size: 1.3em;
-}
 
 
 p.slogan {
@@ -232,6 +226,13 @@ footer {
 	background: rgb(255 255 84);
 }
 
+main.menu ul li {
+	margin: 1em 1em 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
 address {
 	color: rgb(236 141 52);
 	margin: 1em 1.3em 1em;
@@ -240,4 +241,51 @@ address {
 
 footer p {
 	margin: 1em;
+}
+
+article {
+	background-color: rgb(7, 255, 255);
+	margin: auto;
+	max-width: 36em;
+}
+
+nav ul li a {
+	color: rgb(255 255 84);
+	background-color: rgb(0 0 244);
+	padding: 0.1em 0.1em 0.0em;
+	font-size: 1em;
+	font-family: sans-serif;
+	margin-left: 0.5em;
+
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+nav ul li {
+	display: block;
+	margin-right: 0em;
+	font-size: 1.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 60em) {
+
+	nav ul li {
+		display: inline;
+		margin-right: 0em;
+		font-size: 2em;
+
+
+	}
+
+
+	main.menu ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+	}
+
+
 }
