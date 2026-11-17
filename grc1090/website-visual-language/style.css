@@ -227,6 +227,16 @@ p.price {
 	color: rgb(23, 26, 36);
 }
 
+p.stilettos {
+
+	font-family: "aabak", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 5em;
+	margin: 1em 0.5em 2em;
+	
+}
+
 nav ul li {
 	text-transform: uppercase;
 	font-weight: bold;
@@ -269,7 +279,7 @@ address {
 	font-family: "calvino", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	color: rgb(210, 217, 224);
+	color: rgb(23, 26, 36);
 	padding-left: 1em;
 }
 
